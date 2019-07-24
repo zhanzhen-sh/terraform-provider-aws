@@ -78,6 +78,7 @@ func resourceAwsAutoscalingGroup() *schema.Resource {
 						"version": {
 							Type:         schema.TypeString,
 							Optional:     true,
+							Default:      "$$Default",
 							ValidateFunc: validation.StringLenBetween(1, 255),
 						},
 					},
